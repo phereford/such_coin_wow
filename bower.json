@@ -1,12 +1,13 @@
 {
-  "lib": {
-    "name": "bower-rails generated lib assets",
-    "dependencies": {
-    }
-  },
-  "vendor": {
-    "name": "bower-rails generated vendor assets",
-    "dependencies": {
-    }
+  "name": "such_coin_wow",
+  "version": "0.0.0",
+  "authors": [
+    "phereford <phereford@gmail.com>"
+  ],
+  "description": "JS Dependencies for such_coin_wow",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "d3": "~3.3.13"
   }
 }
