@@ -3,7 +3,10 @@ Help miners figure out profitability based on transacions from dogecoind and
 exchange rates from 3 exchages.
 
 BASICS
-User model with authentication
+Devise * IN PROGRESS
+generator for setting project up
+ * Includes rake db create, rake db:migrate, set up user
+ * May cp dogecoin.conf over to config
 dogecoind binary
 Transactions table tracking all incoming and outgoing items for user
 configuration for which coins being mined/preferred
