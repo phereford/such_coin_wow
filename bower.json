@@ -8,6 +8,12 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "d3": "~3.3.13"
+    "html5shiv": "~3.7.0",
+    "bootstrap": "~3.0.3",
+    "jquery": "~2.0.3",
+    "font-awesome": "~4.0.3",
+    "chosen": "~1.0.0",
+    "highcharts.com": "~3.0.7",
+    "ember.js": "~1.2.0"
   }
 }

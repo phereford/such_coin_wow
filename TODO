@@ -1,0 +1,18 @@
+Idea
+Help miners figure out profitability based on transacions from dogecoind and
+exchange rates from 3 exchages.
+
+BASICS
+User model with authentication
+dogecoind binary
+Transactions table tracking all incoming and outgoing items for user
+configuration for which coins being mined/preferred
+settings panel for choosing coins
+START WITH DOGE, move to litecoin and bitcoin after
+D3 for graphing
+Ask for upfront cost and monthly electrical cost
+
+Get some information from following data sources:
+http://bter.com/api
+https://vircurex.com/welcome/api?locale=en
+https://www.cryptsy.com/pages/api
