@@ -1,0 +1,9 @@
+<%- current_user.total_coins.each_pair do |key, value| %>
+  <%= render 'panel', key: key, value: value %>
+<% end %>
+
+<%- content_for :foot do %>
+  <script type='text/javascript'>
+    new MiningVarianceChart($('#chart-container').data('coin-id'));
+  </script>
+<% end %>

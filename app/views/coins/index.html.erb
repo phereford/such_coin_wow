@@ -1,0 +1,39 @@
+<section id='page_index'>
+  <header>
+    <div class='pull-right'>
+      <%= link_to new_coin_path, class: 'btn btn-small' do %>
+        <i class='icon-plus'></i>
+        Add Coin
+      <% end %>
+    </div>
+    <h1>Coins</h1>
+  </header>
+
+  <table class='table table-striped'>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Ticker</th>
+        <th>Mined</th>
+        <th>Last Synced</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render collection: @coins, partial: 'coin' %>
+    </tbody>
+  </table>
+
+  <div class='row-fluid'>
+    <%= paginate @coins, theme: 'twitter-bootstrap-3' %>
+  </div>
+</section>
+
+<%- content_for :foot do %>
+  <script type='text/javascript'>
+    $(function() {
+      new SyncTransaction();
+      new RemoveObject();
+    });
+  </script>
+<% end %>

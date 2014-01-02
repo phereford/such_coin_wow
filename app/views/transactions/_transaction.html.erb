@@ -1,0 +1,6 @@
+<tr[transaction]>
+  <td><%= transaction.coin_name %></td>
+  <td><%= transaction.account %></td>
+  <td><%= colorize_amount(transaction) %></td>
+  <td><%= time_ago_in_words(transaction.occurred_at) %> ago</td>
+</tr>

@@ -3,7 +3,7 @@ Help miners figure out profitability based on transacions from dogecoind and
 exchange rates from 3 exchages.
 
 BASICS
-Devise * IN PROGRESS
+whenever gem for schediling
 generator for setting project up
  * Includes rake db create, rake db:migrate, set up user
  * May cp dogecoin.conf over to config

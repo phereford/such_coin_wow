@@ -19,9 +19,11 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string   :current_sign_in_ip
       t.string   :last_sign_in_ip
 
+      t.hstore :total_coins, default: '', null: false
       t.timestamps
     end
 
+    execute 'CREATE INDEX user_total_coins ON users USING GIN(total_coins)'
     add_index :users, :email,                :unique => true
     add_index :users, :reset_password_token, :unique => true
   end

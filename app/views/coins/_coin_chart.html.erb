@@ -1,0 +1,10 @@
+<div id='chart-container' data-coin-id='<%= coin.id %>' data-coin-name='<%= coin.ticker %>'>
+</div>
+
+<%- content_for :foot do %>
+  <script type='text/javascript'>
+  $(function(){
+    new MiningVarianceChart();
+  });
+  </script>
+<% end %>

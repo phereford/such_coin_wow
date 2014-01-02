@@ -1,0 +1,17 @@
+<tr[coin]>
+  <td><%= coin.name %></td>
+  <td><%= coin.ticker %></td>
+  <td><%= coin.mined %></td>
+  <td>
+    <%- if coin.last_synced_at %>
+      <%= time_ago_in_words(coin.last_synced_at) %>
+    <% else %>
+      Never Synced
+    <% end %>
+  </td>
+  <td>
+    <%= link_to 'Edit', edit_coin_path(coin), class: 'btn btn-primary btn-small' %>
+    <%= link_to 'Sync', sync_coin_path(coin), class: 'sync btn btn-info btn-small' %>
+    <%= link_to 'Delete', coin_path(coin), method: :delete, class: 'remove btn btn-warning btn-small' %>
+  </td>
+</tr>

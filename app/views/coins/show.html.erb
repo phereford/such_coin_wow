@@ -1,0 +1,7 @@
+<div class='page-header position-relative'>
+  <h1><%= @coin.name %></h1>
+</div>
+
+<%- if @coin.mined %>
+  <%= render 'coin_chart', coin: @coin %>
+<% end %>

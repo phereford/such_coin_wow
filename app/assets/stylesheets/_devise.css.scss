@@ -1,0 +1,13 @@
+.devise-new-container {
+  @include make-lg-column-offset(5);
+  @include make-lg-column(4);
+
+  @include make-md-column-offset(5);
+  @include make-md-column(4);
+
+  @include make-sm-column-offset(5);
+  @include make-sm-column(4);
+
+  @include make-xs-column-offset(5);
+  @include make-xs-column(4);
+}

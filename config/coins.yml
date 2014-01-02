@@ -1,0 +1,659 @@
+---
+-
+  name: Dogecoin
+  ticker: DOGE
+  cryptsy_market_ids:
+    BTC: 132
+    LTC: 135
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: Bitcoin
+  ticker: BTC
+-
+  name: Litecoin
+  ticker: LTC
+  cryptsy_market_ids:
+    BTC: 3
+  trade_history:
+    BTC: 
+-
+  name: Alphacoin
+  ticker: ALF
+  cryptsy_market_ids:
+    BTC: 57
+  trade_history:
+    BTC: 
+-
+  name: Americancoin
+  ticker: AMC
+  cryptsy_market_ids:
+    BTC: 43
+  trade_history:
+    BTC: 
+-
+  name: Anoncoin
+  ticker: ANC
+  cryptsy_market_ids:
+    BTC: 66
+    LTC: 121
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: Argentum
+  ticker: ARG
+  cryptsy_market_ids:
+    BTC: 48
+  trade_history:
+    BTC: 
+-
+  name: Betacoin
+  ticker: BET
+  cryptsy_market_ids:
+    BTC: 129
+  trade_history:
+    BTC: 
+-
+  name: BBQCoin
+  ticker: BQC
+  cryptsy_market_ids:
+    BTC: 10
+  trade_history:
+    BTC: 
+-
+  name: Bitbar
+  ticker: BTB
+  cryptsy_market_ids:
+    BTC: 23
+  trade_history:
+    BTC: 
+-
+  name: Bytecoin
+  ticker: BTE
+  cryptsy_market_ids:
+    BTC: 49
+  trade_history:
+    BTC: 
+-
+  name: Bitgem
+  ticker: BTG
+  cryptsy_market_ids:
+    BTC: 50
+  trade_history:
+    BTC: 
+-
+  name: Cryptobuck
+  ticker: BUK
+  cryptsy_market_ids:
+    BTC: 102
+  trade_history:
+    BTC: 
+-
+  name: Bottlecaps
+  ticker: CAP
+  cryptsy_market_ids:
+    BTC: 53
+  trade_history:
+    BTC: 
+-
+  name: Catcoin
+  ticker: CAT
+  cryptsy_market_ids:
+    BTC: 136
+  trade_history:
+    BTC: 
+-
+  name: CryptogenicBullion
+  ticker: CGB
+  cryptsy_market_ids:
+    BTC: 70
+    LTC: 123
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: CopperLark
+  ticker: CLR
+  cryptsy_market_ids:
+    BTC: 95
+  trade_history:
+    BTC: 
+-
+  name: Cosmoscoin
+  ticker: CMC
+  cryptsy_market_ids:
+    BTC: 74
+  trade_history:
+    BTC: 
+-
+  name: CHNCoin
+  ticker: CNC
+  cryptsy_market_ids:
+    BTC: 8
+    LTC: 17
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: CraftCoin
+  ticker: CRC
+  cryptsy_market_ids:
+    BTC: 58
+  trade_history:
+    BTC: 
+-
+  name: CasinoCoin
+  ticker: CSC
+  cryptsy_market_ids:
+    BTC: 68
+  trade_history:
+    BTC: 
+-
+  name: eMark
+  ticker: DEM
+  cryptsy_market_ids:
+    BTC: 131
+  trade_history:
+    BTC: 
+-
+  name: DigitalCoin
+  ticker: DGC
+  cryptsy_market_ids:
+    BTC: 26
+    LTC: 96
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: Diamond
+  ticker: DMD
+  cryptsy_market_ids:
+    BTC: 72
+  trade_history:
+    BTC: 
+-
+  name: ElaCoin
+  ticker: ELC
+  cryptsy_market_ids:
+    BTC: 12
+  trade_history:
+    BTC: 
+-
+  name: Emerald
+  ticker: EMD
+  cryptsy_market_ids:
+    BTC: 69
+  trade_history:
+    BTC: 
+-
+  name: FireflyCoin
+  ticker: FFC
+  cryptsy_market_ids:
+    BTC: 138
+  trade_history:
+    BTC: 
+-
+  name: FreiCoin
+  ticker: FBC
+  cryptsy_market_ids:
+    BTC: 39
+  trade_history:
+    BTC: 
+-
+  name: Franko
+  ticker: FRK
+  cryptsy_market_ids:
+    BTC: 33
+  trade_history:
+    BTC: 
+-
+  name: FastCoin
+  ticker: FST
+  cryptsy_market_ids:
+    BTC: 44
+    LTC: 124
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: FeatherCoin
+  ticker: FTC
+  cryptsy_market_ids:
+    BTC: 5
+  trade_history:
+    BTC: 
+-
+  name: GrandCoin
+  ticker: GDC
+  cryptsy_market_ids:
+    BTC: 82
+  trade_history:
+    BTC: 
+-
+  name: Globalcoin
+  ticker: GLC
+  cryptsy_market_ids:
+    BTC: 76
+  trade_history:
+    BTC: 
+-
+  name: GoldCoin
+  ticker: GLD
+  cryptsy_market_ids:
+    BTC: 30
+    LTC: 36
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: Galaxycoin
+  ticker: GLX
+  cryptsy_market_ids:
+    BTC: 78
+  trade_history:
+    BTC: 
+-
+  name: HoboNickels
+  ticker: HBN
+  cryptsy_market_ids:
+    BTC: 80
+  trade_history:
+    BTC: 
+-
+  name: IXCoin
+  ticker: IXC
+  cryptsy_market_ids:
+    BTC: 38
+  trade_history:
+    BTC: 
+-
+  name: KrugerCoin
+  ticker: KGC
+  cryptsy_market_ids:
+    BTC: 65
+  trade_history:
+    BTC: 
+-
+  name: Lucky7Coin
+  ticker: LK7
+  cryptsy_market_ids:
+    BTC: 116
+  trade_history:
+    BTC: 
+-
+  name: LuckyCoin
+  ticker: LKY
+  cryptsy_market_ids:
+    BTC: 34
+  trade_history:
+    BTC: 
+-
+  name: LottoCoin
+  ticker: LOT
+  cryptsy_market_ids:
+    BTC: 137
+  trade_history:
+    BTC: 
+-
+  name: MegaCoin
+  ticker: MEC
+  cryptsy_market_ids:
+    BTC: 45
+    LTC: 100
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: MinCoin
+  ticker: MNC
+  cryptsy_market_ids:
+    BTC: 7
+  trade_history:
+    BTC: 
+-
+  name: Nibble
+  ticker: NBL
+  cryptsy_market_ids:
+    BTC: 32
+  trade_history:
+    BTC: 
+-
+  name: NeoCoin
+  ticker: NEC
+  cryptsy_market_ids:
+    BTC: 90
+  trade_history:
+    BTC: 
+-
+  name: Netcoin
+  ticker: NET
+  cryptsy_market_ids:
+    BTC: 134
+    LTC: 108
+    XPM: 104
+  trade_history:
+    BTC: 
+    LTC: 
+    XPM: 
+-
+  name: NameCoin
+  ticker: NMC
+  cryptsy_market_ids:
+    BTC: 29
+  trade_history:
+    BTC: 
+-
+  name: NoirBits
+  ticker: NRB
+  cryptsy_market_ids:
+    BTC: 54
+  trade_history:
+    BTC: 
+-
+  name: NovaCoin
+  ticker: NVC
+  cryptsy_market_ids:
+    BTC: 13
+  trade_history:
+    BTC: 
+-
+  name: Orbitcoin
+  ticker: ORB
+  cryptsy_market_ids:
+    BTC: 75
+  trade_history:
+    BTC: 
+-
+  name: PhilosopherStone
+  ticker: PHS
+  cryptsy_market_ids:
+    BTC: 86
+  trade_history:
+    BTC: 
+-
+  name: Peercoin
+  ticker: PPC
+  cryptsy_market_ids:
+    BTC: 28
+    LTC: 125
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: ProtoShares
+  ticker: PTS
+  cryptsy_market_ids:
+    BTC: 119
+  trade_history:
+    BTC: 
+-
+  name: PhoenixCoin
+  ticker: PXC
+  cryptsy_market_ids:
+    BTC: 31
+    LTC: 101
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: PayCoin
+  ticker: PYC
+  cryptsy_market_ids:
+    BTC: 92
+  trade_history:
+    BTC: 
+-
+  name: QuarkCoin
+  ticker: QRK
+  cryptsy_market_ids:
+    BTC: 71
+    LTC: 126
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: StableCoin
+  ticker: SBC
+  cryptsy_market_ids:
+    BTC: 51
+    LTC: 128
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: Spots
+  ticker: SPT
+  cryptsy_market_ids:
+    BTC: 81
+  trade_history:
+    BTC: 
+-
+  name: Securecoin
+  ticker: SRC
+  cryptsy_market_ids:
+    BTC: 88
+  trade_history:
+    BTC: 
+-
+  name: Tagcoin
+  ticker: TAG
+  cryptsy_market_ids:
+    BTC: 117
+  trade_history:
+    BTC: 
+-
+  name: TekCoin
+  ticker: TEK
+  cryptsy_market_ids:
+    BTC: 114
+  trade_history:
+    BTC: 
+-
+  name: TigerCoin
+  ticker: TGC
+  cryptsy_market_ids:
+    BTC: 130
+  trade_history:
+    BTC: 
+-
+  name: TerraCoin
+  ticker: TRC
+  cryptsy_market_ids:
+    BTC: 27
+  trade_history:
+    BTC: 
+-
+  name: Unobtanium
+  ticker: UNO
+  cryptsy_market_ids:
+    BTC: 133
+  trade_history:
+    BTC: 
+-
+  name: WorldCoin
+  ticker: WDC
+  cryptsy_market_ids:
+    BTC: 14
+    LTC: 21
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: JouleCoin
+  ticker: XJO
+  cryptsy_market_ids:
+    BTC: 115
+  trade_history:
+    BTC: 
+-
+  name: PrimeCoin
+  ticker: XPM
+  cryptsy_market_ids:
+    BTC: 63
+    LTC: 106
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: YBCoin
+  ticker: YBC
+  cryptsy_market_ids:
+    BTC: 73
+  trade_history:
+    BTC: 
+-
+  name: ZetaCoin
+  ticker: ZET
+  cryptsy_market_ids:
+    BTC: 85
+    LTC: 127
+  trade_history:
+    BTC: 
+    LTC: 
+-
+  name: AndroidsToken
+  ticker: ADT
+  cryptsy_market_ids:
+    LTC: 94
+    XPM: 113
+  trade_history:
+    LTC: 
+    XPM: 
+-
+  name: AsicCoin
+  ticker: ASC
+  cryptsy_market_ids:
+    LTC: 111
+    XPM: 112
+  trade_history:
+    LTC: 
+    XPM: 
+-
+  name: Pennies
+  ticker: CENT
+  cryptsy_market_ids:
+    LTC: 97
+    XPM: 118
+  trade_history:
+    LTC: 
+    XPM: 
+-
+  name: CopperBars
+  ticker: CPR
+  cryptsy_market_ids:
+    LTC: 91
+  trade_history:
+    LTC: 
+-
+  name: Doubloons
+  ticker: DBL
+  cryptsy_market_ids:
+    LTC: 46
+  trade_history:
+    LTC: 
+-
+  name: DevCoin
+  ticker: DVC
+  cryptsy_market_ids:
+    LTC: 52
+    XPM: 122
+  trade_history:
+    LTC: 
+    XPM: 
+-
+  name: ElephantCoin
+  ticker: ELP
+  cryptsy_market_ids:
+    LTC: 93
+  trade_history:
+    LTC: 
+-
+  name: EZCoin
+  ticker: EZC
+  cryptsy_market_ids:
+    LTC: 55
+  trade_history:
+    LTC: 
+-
+  name: FlorinCoin
+  ticker: FLO
+  cryptsy_market_ids:
+    LTC: 61
+  trade_history:
+    LTC: 
+-
+  name: GameCoin
+  ticker: GME
+  cryptsy_market_ids:
+    LTC: 84
+  trade_history:
+    LTC: 
+-
+  name: InfinieCoin
+  ticker: IFC
+  cryptsy_market_ids:
+    LTC: 60
+    XPM: 105
+  trade_history:
+    LTC: 
+    XPM: 
+-
+  name: JunkCoin
+  ticker: JKC
+  cryptsy_market_ids:
+    LTC: 35
+  trade_history:
+    LTC: 
+-
+  name: MemeCoin
+  ticker: MEM
+  cryptsy_market_ids:
+    LTC: 56
+  trade_history:
+    LTC: 
+-
+  name: MasterCoin
+  ticker: MST
+  cryptsy_market_ids:
+    LTC: 62
+  trade_history:
+    LTC: 
+-
+  name: RedCoin
+  ticker: RED
+  cryptsy_market_ids:
+    LTC: 87
+  trade_history:
+    LTC: 
+-
+  name: RoyalCoin
+  ticker: RYC
+  cryptsy_market_ids:
+    LTC: 37
+  trade_history:
+    LTC: 
+-
+  name: SexCoin
+  ticker: SXC
+  cryptsy_market_ids:
+    LTC: 98
+  trade_history:
+    LTC: 
+-
+  name: Tickets
+  ticker: TIX
+  cryptsy_market_ids:
+    LTC: 107
+    XPM: 103
+  trade_history:
+    LTC: 
+    XPM: 
+-
+  name: XenCoin
+  ticker: XNC
+  cryptsy_market_ids:
+    LTC: 67
+  trade_history:
+    LTC: 

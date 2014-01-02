@@ -1,0 +1,23 @@
+<section id='page_index'>
+  <header>
+    <h1>Transactions</h1>
+  </header>
+
+  <table class='table table-striped'>
+    <thead>
+      <tr>
+        <th>Coin</th>
+        <th>Account</th>
+        <th>Amount</th>
+        <th>Time Occurred</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render collection: @transactions, partial: 'transaction' %>
+    </tbody>
+  </table>
+
+  <div class='row-fluid'>
+    <%= paginate @transactions, theme: 'twitter-bootstrap-3' %>
+  </div>
+</section>

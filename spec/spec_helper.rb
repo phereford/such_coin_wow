@@ -6,6 +6,8 @@ require 'capybara/rspec'
 require 'capybara/rails'
 require 'factory_girl_rails'
 require 'capybara/poltergeist'
+require 'vcr'
+require 'webmock/rspec'
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each {|f| require f}
 
@@ -13,6 +15,13 @@ SimpleCov.start 'rails'
 Capybara.javascript_driver = :poltergeist
 DatabaseCleaner.strategy = :truncation
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
+
+VCR.configure do |config|
+  config.cassette_library_dir = 'fixutres/vcr_cassettes'
+  config.hook_into :webmock
+  config.default_cassette_options = { :record => :new_episodes, :erb => true }
+  config.configure_rspec_metadata!
+end
 
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
@@ -28,4 +37,9 @@ RSpec.configure do |config|
   config.after do
     DatabaseCleaner.clean
   end
+
+  config.include Devise::TestHelpers, type: :controller
+  config.include ControllerHelpers, type: :controller
+  config.include CoinHelper, type: :model
+  config.include DynamicCoinKlassHelper
 end

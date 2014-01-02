@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://rpc_fake_user:rpc_fake_passowrd@127.0.0.1:22555/
+    body:
+      encoding: UTF-8
+      string: "{\"method\":\"listtransactions\",\"params\":[\"*\",10000],\"id\":\"jsonrpc\"}"
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '65'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Authorization Required
+    headers:
+      Date:
+      - Thu, 09 Jan 2014 13:44:56 +0000
+      Server:
+      - dogecoin-json-rpc/1.4.0.4-beta
+      Www-Authenticate:
+      - Basic realm="jsonrpc"
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '296'
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n\"http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd\">\r\n<HTML>\r\n<HEAD>\r\n<TITLE>Error</TITLE>\r\n<META
+        HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=ISO-8859-1'>\r\n</HEAD>\r\n<BODY><H1>401
+        Unauthorized.</H1></BODY>\r\n</HTML>\r\n"
+    http_version: 
+  recorded_at: Thu, 09 Jan 2014 13:44:56 GMT
+- request:
+    method: post
+    uri: http://doge123adklj:pEhAtHa4AjexewR@127.0.0.1:22555/
+    body:
+      encoding: UTF-8
+      string: "{\"method\":\"listtransactions\",\"params\":[\"*\",10000],\"id\":\"jsonrpc\"}"
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '65'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jan 2014 13:53:13 +0000
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4284'
+      Content-Type:
+      - application/json
+      Server:
+      - dogecoin-json-rpc/1.4.0.4-beta
+    body:
+      encoding: UTF-8
+      string: |
+        {"result":[{"account":"CryptoValley","address":"DN3uCau3QNTQ1zSm6SWHCyfDgn4wEEaf5Y","category":"receive","amount":0.00069000,"confirmations":21099,"blockhash":"f0184148685da86fd995af3c2329584b61fe3fe04a7cea19ee0961438d88bded","blockindex":90,"txid":"11771f4f8d8ae4d9e501443816e8279d2e30b933b9ef653ebd3ed93c0829bf18","time":1387919239},{"account":"CryptoValley","address":"DN3uCau3QNTQ1zSm6SWHCyfDgn4wEEaf5Y","category":"receive","amount":2458.02544062,"confirmations":20938,"blockhash":"01fab558cb9f2d2d711dd4c32e29b769e60c4809d3f9cf6fb4bec6dc2aa42114","blockindex":150,"txid":"9470b426266616b438deca27011137d952f437a3fbbe21aad125fa6c7d80eec2","time":1387927383},{"account":"dogehouse.org","address":"DFKm9DarwEfjwi5WtY4R3gHxDhWURVp3a8","category":"receive","amount":126.10762557,"confirmations":20842,"blockhash":"a38a9fa05dfd6ee4bb65e90fbc62dc0002391dede8a4eb1d3cbf7ae961aafe28","blockindex":34,"txid":"10835b4b356d286f4432c20e30a4c85b56d8fa310521235a06569f9447eae3ec","time":1387932664},{"account":"phereford.io","address":"DJ2KQgTmKofcUdB2qY2p6pcbaZMcfmh9PU","category":"receive","amount":100.00000000,"confirmations":17033,"blockhash":"2fe79ebcf395f79810c3490136b1caa21edc495a8efa82644236b3b612093acb","blockindex":12,"txid":"3e0a45158980e87a04892a635557a5794fd448b956f40848c83a8ddbb056a3fc","time":1388163285},{"account":"dogehouse.org","address":"DFKm9DarwEfjwi5WtY4R3gHxDhWURVp3a8","category":"receive","amount":1035.00799659,"confirmations":16725,"blockhash":"18a3937370a8cc0eda43657fc09648e5e2986d03da504cf28346f34a7c9ac435","blockindex":43,"txid":"d4e329f9a0a44391048a4a3da6ee01fe8cfd92e34271a2c93f5cedb703a94dd3","time":1388185055},{"account":"dogehouse.org","address":"DFKm9DarwEfjwi5WtY4R3gHxDhWURVp3a8","category":"receive","amount":40.91397247,"confirmations":16525,"blockhash":"d42898b9c2bff0f5197dde7e99cd2a9b7c4f2cfe0dbf34f4cd888379d120004c","blockindex":89,"txid":"d4298340983f3c8b07f96a409c8c0fadb19a6a1df906318652c5d482e54295d8","time":1388194514},{"account":"CryptoValley","address":"DN3uCau3QNTQ1zSm6SWHCyfDgn4wEEaf5Y","category":"receive","amount":959.04586803,"confirmations":15519,"blockhash":"c116c91a6491a1da77830155bdb2c483708c8680437d916c93e0b8c1970d0740","blockindex":937,"txid":"c26fac246351346a806b4a83663fdd6b9f1c394d1fb0fd2097b3137c03bd7f65","time":1388253794},{"account":"dogehouse.org","address":"DFKm9DarwEfjwi5WtY4R3gHxDhWURVp3a8","category":"receive","amount":694.54133793,"confirmations":15441,"blockhash":"a7ce4727710fd5ccc3fc6147d1f69b97155bc8c13eadbca72ca4bf7342ee4cbc","blockindex":190,"txid":"f3cb2d5ef80d753b5af5dbd44ec5b1c325ad4592ce2d3d782465cade22ded25f","time":1388259883},{"account":"dogehouse.org","address":"DFKm9DarwEfjwi5WtY4R3gHxDhWURVp3a8","category":"receive","amount":500.21781506,"confirmations":14596,"blockhash":"b5f4677b22387892bd1bc7204ac015f0ba0204e6be52f6f2cba62952ee278f4a","blockindex":72,"txid":"7c7774ee683f869eb7b912300e65a8c6ea51024d013e65caa36ff991c1900930","time":1388330337},{"account":"CryptoValley","address":"DN3uCau3QNTQ1zSm6SWHCyfDgn4wEEaf5Y","category":"receive","amount":10.00000000,"confirmations":14498,"blockhash":"690edccfe7e2f9831370638f800b8f9f0b0aee24d51d710682597c9411e2f879","blockindex":12,"txid":"348f09784d75988ec8428a137912ed1b936b01e3255c1c7c0a756b2f9ec4cf6e","time":1388330626},{"account":"dogehouse.org","address":"DFKm9DarwEfjwi5WtY4R3gHxDhWURVp3a8","category":"receive","amount":542.44861860,"confirmations":13909,"blockhash":"beebcd08f527e743b5caaba94ed9232189d383622d2e2cadce0962d64a519966","blockindex":265,"txid":"28d845665884412f40e998a3ee290df1a850f086e920caad2a2b727a07fc44ad","time":1388354722},{"account":"dogehouse.org","address":"DFKm9DarwEfjwi5WtY4R3gHxDhWURVp3a8","category":"receive","amount":503.57949587,"confirmations":13127,"blockhash":"81418550eab808b2740d9e813bed0e53222b3ce893aedaa85f42ce92fcecd245","blockindex":137,"txid":"dc4969c0eb8e69736b70e6c1e71e4df8e9577d01e501f2460cf31f38ffc984e1","time":1388409256},{"account":"Cryptsy","address":"DFZdTa1z7Piybcbm6mZk3yuXJeFiGyxr3m","category":"receive","amount":88090.43786382,"confirmations":5536,"blockhash":"33146f170c249dbd059727a8dfac8c189bd68853a734de4b146d63456404df1d","blockindex":2,"txid":"81ec31c432d163eeb7bd394bab2c42d44e4cb524c9c84c76dfde7c90a1d0959f","time":1388863372}],"error":null,"id":"jsonrpc"}
+    http_version: 
+  recorded_at: Thu, 09 Jan 2014 13:53:13 GMT
+recorded_with: VCR 2.8.0

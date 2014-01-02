@@ -11,13 +11,38 @@ __*BTC*: 1EUfts1TAEYqu8Aq2inAWMUDztrRisBo79
 This project is a web application that allows Cryptocurrency miners track their
 profitability. Since most online wallets get hacked rather frequently, this app
 is meant to be a single user application that can be run locally or deployed to
-the cloud.
+the cloud. I run this locally to track my profitability for various coins.
 
 ## Setup ##
 ```
 git clone git@github.com:phereford/such_coin_wow.git
 cd such_coin_wow
-rails g such_coin_wow:setup
+rake such_coin_wow:install
+```
+The install rake task will setup the database, migrate it, create your single
+user account, and create all the coins. You will need to alter the .env file in
+order to setup the various user, password, and port arguments for each JSON-RPC
+server you run locally (i.e. each wallet you have open/each coin you mine). The
+variable names must match the pattern ```"#{coin.ticker}_VAR"```. Here is an
+example:
+```
+DOGE_USER=<INSERT USER NAME>
+DOGE_PASSWORD=<INSERT PASSWORD>
+DOGE_PORT=<INSERT PORT>
+```
+
+IF you can not run the console variation of the wallet, be sure to pass in the 
+-server argument to be able to connect to your wallet via JSON-RPC. i.e
+```
+> ./Dogecoin -server
+```
+
+## Running the Server ##
+After you set up the various wallet user/password/port variables, you will need
+to start each wallet with the -server option. Alternatively you can compile the
+various wallet json-rpc command line exectuables and run those.
+```
+foreman start
 ```
 
 ## Contributing ##
