@@ -14,6 +14,7 @@ FactoryGirl.define do
     user
     name
     ticker
+    cryptsy_market_ids { { 'BTC' => 132 } }
 
     trait :invalid do
       name nil

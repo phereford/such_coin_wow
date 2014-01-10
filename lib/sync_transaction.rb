@@ -9,7 +9,7 @@ class SyncTransaction
     sync(@coin.transactions.blank? ? 10000 : 100)
   end
 
-  def update_coin_object
+  def update_coin
     update_trade_history
     @coin.last_synced_at = Time.now
     @coin.save

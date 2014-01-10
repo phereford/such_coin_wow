@@ -1,7 +1,7 @@
 class SyncTransactionJob < Struct.new(:coin)
   def perform
     sync = SyncTransaction.new(coin)
-    sync.update_coin_object
+    sync.update_coin
   end
 
   def error
