@@ -13,9 +13,9 @@ if Rails.env.development? || Rails.env.test?
     t.pattern = './spec/factories_spec.rb'
   end
 
-  desc 'Run admin tests.'
-  RSpec::Core::RakeTask.new(:admin) do |t|
-    t.pattern = './spec/admin/**/*_spec.rb'
+  desc 'Run integration tests.'
+  RSpec::Core::RakeTask.new(:integration) do |t|
+    t.pattern = './spec/features/**/*_spec.rb'
     t.rspec_opts = %w(-fs -c)
   end
 end
@@ -26,4 +26,4 @@ task :rbp do
 end
 
 task(:default).clear
-task default: [:factory_specs, :specs_without_factory_specs, :admin]
+task default: [:factory_specs, :specs_without_factory_specs, :integration]
