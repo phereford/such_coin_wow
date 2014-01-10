@@ -15,18 +15,8 @@ describe SyncTransaction, '.new', vcr: true do
     sync = SyncTransaction.new(@coin)
     expect(sync.instance_variable_get(:@coin_klass)).to eql @coin.ticker.constantize
   end
-end
 
-describe SyncTransaction, '#sync' do
-  it 'connects to the JSON-RPC server' do
-  end
-
-  it 'gets a list of transactions' do
-  end
-
-  it 'persists the transaction on validation' do
-  end
-
-  it 'does not save the transaction' do
+  it 'syncs the coin object' do
+    expect{SyncTransaction.new(@coin)}.to change{@coin.transactions.count}
   end
 end

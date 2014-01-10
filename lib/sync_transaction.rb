@@ -1,17 +1,19 @@
 class SyncTransaction
   include Retryable
   require 'cryptsy/api'
+
   def initialize(coin)
     @coin = coin
     @coin_klass = coin.ticker.constantize
 
     sync(@coin.transactions.blank? ? 10000 : 100)
+  end
 
+  def update_coin_object
     update_trade_history
-
     @coin.last_synced_at = Time.now
-
     @coin.save
+
     check_and_queue
   end
 
@@ -26,7 +28,6 @@ class SyncTransaction
     @coin.trade_history_will_change!
     @coin.cryptsy_market_ids.each do |market_name, market_id|
       check_trade_history(market_name)
-
       @coin.trade_history[market_name].merge!(last_traded_amount(market_id))
     end
   end
@@ -59,7 +60,7 @@ class SyncTransaction
   end
 
   def check_and_queue
-    if job = Delayed::Job.where(queue: @coin.ticker)
+    if job = Delayed::Job.where(queue: @coin.ticker).first
       job.destroy
     end
 

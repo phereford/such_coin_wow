@@ -5,10 +5,20 @@ namespace :such_coin_wow do
   task install: [ :setup_db, :create_user, :seed_db ]
 
   task :setup_db do
+    say('Creating the database')
     system('foreman run rake db:create')
+
+    say('Migrating the database')
     system('foreman run rake db:migrate')
+
+    say('Installing Dependencies from bower')
     system('foreman run rake bower:install')
+
+    say('Resolving dependencies from bower')
     system('foreman run rake bower:resolve')
+
+    say('Running bundle install')
+    system('bundle install')
   end
 
   task :create_user => :environment do
