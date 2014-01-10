@@ -101,7 +101,7 @@
         null,
         null,
         1,
-        3,
+        2,
         0,
         0,
         null,
@@ -110,21 +110,21 @@
         null,
         1,
         1,
-        3,
+        2,
         2,
         null,
         null,
         null,
         1,
-        3,
-        3,
-        3,
-        3,
+        2,
+        2,
+        2,
+        2,
         null,
         null,
         null,
         1,
-        3,
+        2,
         null,
         null,
         null,
@@ -211,8 +211,12 @@
         101,
         null,
         null
+      ],
+      "/Users/phereford/Sites/rails/such_coin_wow/app/controllers/sessions_controller.rb": [
+        1,
+        null
       ]
     },
-    "timestamp": 1389364411
+    "timestamp": 1389380364
   }
 }
