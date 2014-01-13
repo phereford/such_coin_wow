@@ -13,7 +13,7 @@
 //= require_self
 //= require such_coin_wow
 
-SuchCoinWow = Ember.Application.create({
+App = Ember.Application.create({
   LOG_TRANSITIONS: true,
   LOG_TRANSITIONS_INTERNAL: true
 });

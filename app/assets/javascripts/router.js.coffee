@@ -1,5 +1,7 @@
-# For more information see: http://emberjs.com/guides/routing/
-
-SuchCoinWow.Router.map ()->
-  # @resource('posts')
+App.Router.map ()->
+  @route "home"
+  @route "dashboard"
+  @route "login"
+  @route "registration"
+  @resource("coins")
 
