@@ -4,6 +4,7 @@
     <title>SuchCoinWow</title>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= csrf_meta_tags %>
+    <%= yield :head %>
   </head>
   <body>
     <div id='wrapper'>
@@ -18,6 +19,11 @@
       </div>
     </div>
     <%= javascript_include_tag 'application' %>
+    <script type='text/javascript'>
+      App.ready = function() {
+        App.initApp(jQuery.parseJSON('#{current_user_json}'));
+      }
+    <script>
     <%= yield :foot %>
   </body>
 </html>

@@ -5,7 +5,7 @@ SuchCoinWow::Application.routes.draw do
     get 'logout', to: 'devise/sessions#destroy'
   end
 
-  get '/dashboard', to: 'dashboard#index', as: :dashboard
+  resource :dashboard, only: [ :index ]
   resources :coins do
     post 'sync', on: :member
     get 'daily_summary', on: :member
@@ -13,5 +13,5 @@ SuchCoinWow::Application.routes.draw do
 
   resources :transactions
 
-  root to: 'dashboard#index'
+  root to: 'home#index'
 end
