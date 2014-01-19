@@ -13,5 +13,5 @@ SuchCoinWow::Application.routes.draw do
 
   resources :transactions
 
-  root to: 'home#index'
+  root to: 'dashboard#index'
 end

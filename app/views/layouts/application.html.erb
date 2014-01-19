@@ -8,22 +8,16 @@
   </head>
   <body>
     <div id='wrapper'>
-      <%- if user_signed_in? %>
-        <%= render 'sidebar' %>
-      <% end %>
-
-      <div id='page-wrapper'>
-        <div class='row content-container'>
-          <%= yield %>
-        </div>
+      <div id='content-container'>
+        <%= yield %>
       </div>
     </div>
     <%= javascript_include_tag 'application' %>
     <script type='text/javascript'>
       App.ready = function() {
-        App.initApp(jQuery.parseJSON('#{current_user_json}'));
+        App.initApp(jQuery.parseJSON('<%= current_user_json %>'));
       }
-    <script>
+    </script>
     <%= yield :foot %>
   </body>
 </html>

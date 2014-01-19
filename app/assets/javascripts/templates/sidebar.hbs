@@ -1,0 +1,20 @@
+<ul class='nav navbar-inverse navbar-nav side-nav'>
+  {{#link-to 'dashboard' href=false tagName='li'}}
+    <a {{bindAttr href='view.href'}}>
+      <i class='fa fa-dashboard'></i>
+      <span>Dashboard</span>
+    </a>
+  {{/link-to}}
+  {{#link-to 'coins' href=false tagName='li'}}
+    <a {{bindAttr href='view.href'}}>
+      <i class='fa fa-btc'></i>
+      <span>Coins</span>
+    </a>
+  {{/link-to}}
+  {{#link-to 'transactions' href=false tagName='li'}}
+    <a {{bindAttr href='view.href'}}>
+      <i class='fa fa-ticket'></i>
+      <span>Transactions</span>
+    </a>
+  {{/link-to}}
+</ul>

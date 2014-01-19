@@ -5,8 +5,11 @@ App.LoginRoute = Ember.Route.extend
     controller.set "errorMsg", ""
   actions:
     login: ->
-      log.info "Logging in..."
+      console.log "Logging in..."
       @controllerFor("auth").login this
     cancel: ->
-      log.ingo "cancelling login"
+      log.info "cancelling login"
       @transitionTo "home"
+    forgotPassword: ->
+      console.log "forgot password"
+      @transitionTo "forgotPassword"
