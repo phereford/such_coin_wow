@@ -19,6 +19,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string   :current_sign_in_ip
       t.string   :last_sign_in_ip
 
+      t.string :authentication_token, null: false
       t.hstore :total_coins, default: '', null: false
       t.timestamps
     end

@@ -11,7 +11,9 @@ App.AuthController = Ember.ObjectController.extend
         "user[password]": route.currentModel.password
       success: (data) ->
         console.log "Login msg #{data.user}"
+        debugger
         me.set "currentUser", data.user
+        App.Store.authToken = data.user.authentication_token
         route.transitionTo "dashboard"
       error: (jqXHR, textStatus, errorThrown) ->
         if jqXHR == 401

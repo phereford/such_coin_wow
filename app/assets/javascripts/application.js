@@ -1,4 +1,5 @@
 //= require jquery
+//= require jquery-cookie/jquery.cookie
 //= require handlebars
 //= require ember
 //= require ember-data

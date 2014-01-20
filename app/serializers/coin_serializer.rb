@@ -1,3 +1,3 @@
 class CoinSerializer < ActiveModel::Serializer
-  attributes :user, :transactions, :name, :ticker
+  attributes :id, :name, :ticker
 end

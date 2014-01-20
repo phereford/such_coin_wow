@@ -1,0 +1,43 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+    {{#if isAuthenticated}}
+      {{#link-to "dashboard" class="navbar-brand"}}SuchCoinWow{{/link-to}}
+    {{else}}
+      {{#link-to "home" class="navbar-brand"}}SuchCoinWow{{/link-to}}
+    {{/if}}
+  </div>
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    {{#if isAuthenticated}}
+      <ul class="nav navbar-inverse navbar-nav side-nav">
+        {{#link-to "dashboard" href=false tagName="li"}}
+          <a {{bind-attr href="view.href"}}>
+            <i class="fa fa-dashboard"></i>
+            <span>Dashboard</span>
+          </a>
+        {{/link-to}}
+        {{#link-to "coins" href=false tagName="li"}}
+          <a {{bind-attr href="view.href"}}>
+            <i class="fa fa-btc"></i>
+            <span>Coins</span>
+          </a>
+        {{/link-to}}
+        {{#link-to "transactions" href=false tagName="li"}}
+          <a {{bind-attr href="view.href"}}>
+            <i class="fa fa-ticket"></i>
+            <span>Transactions</span>
+          </a>
+        {{/link-to}}
+      </ul>
+    {{/if}}
+    <ul class="nav navbar-nav navbar-right navbar-user">
+      <li class="authentication">
+        {{#if isAuthenticated}}
+          <button class="btn" {{action logout}}>Logout</button>
+        {{else}}
+          {{view App.MenuItemView href="#/login" label="Login" class="btn"}}
+        {{/if}}
+      </li>
+    </ul>
+  </div>
+</div>
+

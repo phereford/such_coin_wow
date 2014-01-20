@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 20140103174016) do
     t.integer  "user_id",                            null: false
     t.string   "name",                               null: false
     t.string   "ticker",                             null: false
-    t.hstore   "cryptsy_market_ids", default: {},    null: false
+    t.hstore   "cryptsy_market_ids", default: "",    null: false
     t.boolean  "mined",              default: false
-    t.hstore   "trade_history",      default: {},    null: false
+    t.hstore   "trade_history",      default: "",    null: false
     t.datetime "last_synced_at"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -79,7 +79,8 @@ ActiveRecord::Schema.define(version: 20140103174016) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.hstore   "total_coins",            default: {}, null: false
+    t.string   "authentication_token",                null: false
+    t.hstore   "total_coins",            default: "", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

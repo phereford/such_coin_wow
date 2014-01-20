@@ -1,12 +1,15 @@
 class CoinsController < ApplicationController
+  before_filter :authenticate_user!
   skip_before_filter :verify_authenticity_token, only: [ :sync, :destroy ]
 
   def index
-    @coins = Coin.page(params[:page])
+    @coins = current_user.coins.page(params[:page])
+    render json: @coins, each_serializer: CoinsSerializer
   end
 
   def show
     @coin = Coin.find(params[:id])
+    render json: @coin, serializer: CoinSerializer
   end
 
   def new

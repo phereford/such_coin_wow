@@ -1,3 +1,3 @@
-App.CoinRoute = Ember.Route.extend
+App.CoinsRoute = Ember.Route.extend
   model: ->
-    @store.find('coin', 1)
+    @store.findAll("coin")
