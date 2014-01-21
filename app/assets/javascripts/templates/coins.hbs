@@ -21,8 +21,11 @@
           <td>{{name}}</td>
           <td>{{ticker}}</td>
           <td>{{mined}}</td>
-          <td>{{lastSyncedAt}}</td>
+          <td>{{parseTime lastSyncedAt}}</td>
           <td>
+            {{#link-to "coin.sync" id class='btn btn-info'}}Sync{{/link-to}}
+            {{#link-to "coin.edit" id class='btn btn-warning'}}Edit{{/link-to}}
+            {{#link-to edit class='btn btn-danger'}}Delete{{/link-to}}
           </td>
         </tr>
       {{/each}}

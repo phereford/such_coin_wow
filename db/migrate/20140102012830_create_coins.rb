@@ -17,5 +17,6 @@ class CreateCoins < ActiveRecord::Migration
     add_index :coins, :user_id
     add_index :coins, :ticker, unique: true
     add_index :coins, :name, unique: true
+    add_index :coins, :mined
   end
 end

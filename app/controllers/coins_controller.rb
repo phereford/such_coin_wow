@@ -3,7 +3,7 @@ class CoinsController < ApplicationController
   skip_before_filter :verify_authenticity_token, only: [ :sync, :destroy ]
 
   def index
-    @coins = current_user.coins.page(params[:page])
+    @coins = current_user.coins.order('mined DESC').page(params[:page])
     render json: @coins, each_serializer: CoinsSerializer
   end
 
