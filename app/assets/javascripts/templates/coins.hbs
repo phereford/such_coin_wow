@@ -16,18 +16,8 @@
       </tr>
     </thead>
     <tbody>
-      {{#each}}
-        <tr>
-          <td>{{name}}</td>
-          <td>{{ticker}}</td>
-          <td>{{mined}}</td>
-          <td>{{parseTime lastSyncedAt}}</td>
-          <td>
-            {{#link-to "coin.sync" id class='btn btn-info'}}Sync{{/link-to}}
-            {{#link-to "coin.edit" id class='btn btn-warning'}}Edit{{/link-to}}
-            {{#link-to edit class='btn btn-danger'}}Delete{{/link-to}}
-          </td>
-        </tr>
+      {{#each coin in controller}}
+        {{view App.CoinInListView contentBinding="coin"}}
       {{/each}}
     </tbody>
   </table>

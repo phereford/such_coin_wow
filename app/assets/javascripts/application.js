@@ -8,7 +8,6 @@
 //= require highcharts.com/js/modules/exporting.src.js
 //= require alertify
 //= require momentjs/moment
-//= require sync-transaction
 //= require remove-object
 //= require hstore
 //= require mining-variance-chart

@@ -48,9 +48,10 @@ class CoinsController < ApplicationController
   def sync
     @coin = Coin.find(params[:id])
     if SyncTransaction.delay.new(@coin)
-      flash[:success] = "#{@coin.ticker} sync processing."
+      render json: "Sync for #{@coin.ticker} successfully queued.".to_json
+    else
+      render json: "There was an error.".to_json
     end
-    redirect_to :back
   end
 
   def daily_summary

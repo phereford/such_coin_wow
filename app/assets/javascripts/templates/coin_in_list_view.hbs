@@ -1,0 +1,9 @@
+<td>{{coin.name}}</td>
+<td>{{coin.ticker}}</td>
+<td>{{coin.mined}}</td>
+<td>{{parseTime coin.lastSyncedAt}}</td>
+<td>
+  <a class="btn btn-info" {{action startSyncing}}>Sync</a>
+  <a class="btn btn-warning" {{action startEditing}}>Edit</a>
+  {{#link-to edit class='btn btn-danger'}}Delete{{/link-to}}
+</td>

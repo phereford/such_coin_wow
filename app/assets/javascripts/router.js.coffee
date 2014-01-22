@@ -5,9 +5,7 @@ App.Router.map ->
 
   @resource "coins"
 
-  @resource "coin", { path: "coin/:coin_id" }, ->
-    @route "edit", { path: "edit" }
-    @route "sync", { path: "sync" }
+  @resource "coin", { path: "coin/:coin_id" }
 
 
   @resource "transactions"
