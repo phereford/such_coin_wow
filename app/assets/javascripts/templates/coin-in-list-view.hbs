@@ -5,11 +5,10 @@
     {{/link-to}}
   </td>
   <td>{{coin.ticker}}</td>
-  <td>{{coin.mined}}</td>
   <td>{{parseTime coin.lastSyncedAt}}</td>
   <td>
-    <a class="btn btn-info" {{action startSyncing coin}}>Sync</a>
-    <a class="btn btn-warning" {{action redirectToEdit coin}}>Edit</a>
-    {{#link-to edit class='btn btn-danger'}}Delete{{/link-to}}
+    <a class="transaction-btn" {{action redirectToTransactions coin}}>Transactions</a>
+    <a class="sync-btn" {{action startSyncing coin}}>Sync</a>
+    <a class="delete-btn" {{action delete coin}}>Delete</a>
   </td>
 </tr>

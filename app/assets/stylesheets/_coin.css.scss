@@ -1,0 +1,19 @@
+.transaction-btn {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+.sync-btn {
+  @extend .btn;
+  @extend .btn-info;
+}
+
+.delete-btn {
+  @extend .btn;
+  @extend .btn-danger;
+}
+
+.edit-btn {
+  @extend .btn;
+  @extend .btn-warning;
+}

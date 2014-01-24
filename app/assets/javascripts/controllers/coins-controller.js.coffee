@@ -1,10 +1,10 @@
 App.CoinsController = Ember.ArrayController.extend
-  needs: [ "auth" ]
+  needs: [ "auth", "coinEdit" ]
   activeCoinId: null
 
   actions:
-    redirectToEdit: ->
-      @transitionTo("coin.edit")
+    redirectToTransactions: (params) ->
+      @transitionToRoute("transactions.index")
 
     startSyncing: (params) ->
       $.ajax "/coins/#{params.id}/sync",
@@ -13,4 +13,13 @@ App.CoinsController = Ember.ArrayController.extend
         success: (data) ->
           alertify.success(data)
         error: (data) ->
-          alertify.log(data.responseText)
+          alertify.error(data.responseText)
+
+    delete: (params) ->
+      @get("store").find("coin", params.id).then (record) ->
+        ticker = record.get("ticker")
+        if confirm "Are you sure you want to delete #{ticker}?"
+          record.destroyRecord().then(onSuccess(ticker))
+
+      onSuccess = (ticker) ->
+        alertify.success("Successfully deleted #{ticker}")

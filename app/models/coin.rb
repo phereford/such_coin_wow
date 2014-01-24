@@ -27,6 +27,12 @@ class Coin < ActiveRecord::Base
     array
   end
 
+  def remove_jobs
+    if jobs = Delayed::Job.where(queue: ticker)
+      jobs.destroy_all
+    end
+  end
+
   private
   def set_initial_total_coin_value
     if mined && user.total_coins[ticker].nil?

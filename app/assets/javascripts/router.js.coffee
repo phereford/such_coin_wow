@@ -6,7 +6,6 @@ App.Router.map ->
   @resource "coins"
 
   @resource "coin", { path: "coin/:coin_id" }
-
-
-  @resource "transactions"
+    
+  @resource "transactions", { path: "transactions" }
   @resource "transaction", { path: "transaction/:transaction_id" }

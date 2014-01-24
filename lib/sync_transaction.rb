@@ -7,6 +7,7 @@ class SyncTransaction
     @coin_klass = coin.ticker.constantize
 
     sync(@coin.transactions.blank? ? 10000 : 100)
+    update_coin
   end
 
   def update_coin
@@ -43,7 +44,8 @@ class SyncTransaction
   def sync(limit)
     client = Bitcoin::Client.new(@coin_klass.user, @coin_klass.password, host: '127.0.0.1', port: @coin_klass.port)
     client.listtransactions('*', limit).each do |transaction|
-      transaction = @coin.transactions.new(
+      transaction = Transaction.new(
+        coin: @coin,
         address: transaction['address'],
         account: transaction['account'],
         transaction_id: transaction['txid'],
@@ -60,9 +62,7 @@ class SyncTransaction
   end
 
   def check_and_queue
-    if job = Delayed::Job.where(queue: @coin.ticker).first
-      job.destroy
-    end
+    @coin.remove_jobs
 
     Delayed::Job.enqueue(
       SyncTransactionJob.new(@coin),

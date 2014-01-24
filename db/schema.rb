@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20140103174016) do
   end
 
   add_index "coins", ["cryptsy_market_ids"], name: "coin_cryptsy_ids", using: :gin
+  add_index "coins", ["mined"], name: "index_coins_on_mined", using: :btree
   add_index "coins", ["name"], name: "index_coins_on_name", unique: true, using: :btree
   add_index "coins", ["ticker"], name: "index_coins_on_ticker", unique: true, using: :btree
   add_index "coins", ["trade_history"], name: "coin_trade_history", using: :gin

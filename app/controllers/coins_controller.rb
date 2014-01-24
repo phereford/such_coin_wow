@@ -47,7 +47,9 @@ class CoinsController < ApplicationController
 
   def sync
     @coin = Coin.find(params[:id])
-    if SyncTransaction.delay.new(@coin)
+    @coin.remove_jobs
+
+    if SyncTransaction.delay(queue: @coin.ticker).new(@coin)
       render json: "Sync for #{@coin.ticker} successfully queued.".to_json
     else
       render json: "There was an error.".to_json
