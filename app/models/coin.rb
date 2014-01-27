@@ -1,6 +1,8 @@
 class Coin < ActiveRecord::Base
   belongs_to :user
   has_many :transactions
+  has_many :exchange_rates
+
   after_commit :set_initial_total_coin_value, if: :persisted?
 
   validates :name, presence: true, uniqueness: true

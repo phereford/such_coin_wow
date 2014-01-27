@@ -1,3 +1,3 @@
 class CoinsSerializer < ActiveModel::Serializer
-  attributes :id, :name, :ticker, :mined, :last_synced_at
+  attributes :id, :name, :ticker, :last_synced_at
 end

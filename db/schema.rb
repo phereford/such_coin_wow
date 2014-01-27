@@ -11,29 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140103174016) do
+ActiveRecord::Schema.define(version: 20140119174016) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
 
   create_table "coins", force: true do |t|
-    t.integer  "user_id",                            null: false
-    t.string   "name",                               null: false
-    t.string   "ticker",                             null: false
-    t.hstore   "cryptsy_market_ids", default: "",    null: false
-    t.boolean  "mined",              default: false
-    t.hstore   "trade_history",      default: "",    null: false
+    t.integer  "user_id",                        null: false
+    t.string   "name",                           null: false
+    t.string   "ticker",                         null: false
+    t.boolean  "mined",          default: false
     t.datetime "last_synced_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "coins", ["cryptsy_market_ids"], name: "coin_cryptsy_ids", using: :gin
   add_index "coins", ["mined"], name: "index_coins_on_mined", using: :btree
   add_index "coins", ["name"], name: "index_coins_on_name", unique: true, using: :btree
   add_index "coins", ["ticker"], name: "index_coins_on_ticker", unique: true, using: :btree
-  add_index "coins", ["trade_history"], name: "coin_trade_history", using: :gin
   add_index "coins", ["user_id"], name: "index_coins_on_user_id", using: :btree
 
   create_table "delayed_jobs", force: true do |t|
@@ -51,6 +47,17 @@ ActiveRecord::Schema.define(version: 20140103174016) do
   end
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
+
+  create_table "exchange_rates", force: true do |t|
+    t.integer  "coin_id"
+    t.string   "market"
+    t.string   "market_id"
+    t.string   "market_type"
+    t.datetime "occurred_at"
+    t.float    "rate"
+  end
+
+  add_index "exchange_rates", ["coin_id"], name: "index_exchange_rates_on_coin_id", using: :btree
 
   create_table "transactions", force: true do |t|
     t.integer  "coin_id"

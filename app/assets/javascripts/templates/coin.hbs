@@ -8,7 +8,39 @@
   {{#if isEditing}}
     testt
   {{else}}
-    
+    <table class="exchanges-table">
+      <thead>
+        <th>Exchange</th>
+        <th>Market</th>
+        <th>Price</th>
+        <th>Date</th>
+      </thead>
+      <tbody>
+      {{#each exchangeRates}}
+      <tr>
+          <td>{{market}}</td>
+          <td>{{marketType}}</td>
+          <td>{{rate}}</td>
+          <td>{{parseTime occurredAt}}</td>
+        </tr>
+      {{/each}}
+      </tbody>
+    </table>
+    <table class="transactions-table">
+      <thead>
+        <th>Account</th>
+        <th>Amount</th>
+        <th>Date</th>
+      </thead>
+      <tbody>
+        {{#each transactions}}
+        <tr {{bind-attr class=category}}>
+            <td>{{account}}</td>
+            <td>{{amount}}</td>
+            <td>{{parseTime occurredAt}}</tD>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
   {{/if}}
 </section>
-

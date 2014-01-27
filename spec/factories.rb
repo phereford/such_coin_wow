@@ -29,4 +29,13 @@ FactoryGirl.define do
     category 'send'
     occurred_at { Date.today }
   end
+
+  factory :exchange_rate do
+    coin
+    market 'cryptsy'
+    market_id '132'
+    market_type 'BTC'
+    occurred_at { Time.now }
+    rate 1.09
+  end
 end

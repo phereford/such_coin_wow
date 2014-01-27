@@ -8,8 +8,8 @@
 @import 'bootstrap-xs-mixins';
 @import 'sb-admin';
 @import 'base';
-@import 'devise';
+@import 'devise/devise';
 @import 'sidebar';
-@import 'transactions';
-@import 'dashboard';
-@import 'coin';
+@import 'transactions/transactions';
+@import 'dashboard/dashboard';
+@import 'coins/coins';

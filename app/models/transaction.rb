@@ -12,8 +12,9 @@ class Transaction < ActiveRecord::Base
   private
   def update_user_total
     coin_user.total_coins_will_change!
-    current_total =  coin_user.total_coins[coin.ticker].to_i
-    coin_user.total_coins[coin.ticker] = current_total + amount
+    current_total =  coin_user.total_coins[coin.ticker].to_f
+    real_amount = category == 'send' ? (amount * -1) : amount
+    coin_user.total_coins[coin.ticker] = current_total + real_amount
     coin_user.save!
   end
 end

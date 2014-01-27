@@ -5,6 +5,7 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 gem 'bitcoin-client', '~> 0.0.3'
 gem 'bootstrap-kaminari-views'
 gem 'bower-rails', '~> 0.6.1'
+gem 'bter-ruby', '~> 0.0.2', github: 'phereford/bter-ruby', branch: 'ph-minor-dependency-fix'
 gem 'coffee-rails', '~> 4.0.1'
 gem 'cryptsy-api', '~> 0.0.3'
 gem 'delayed_job', '~> 4.0.0'
@@ -16,6 +17,7 @@ gem 'highline', '~> 1.6.20'
 gem 'jbuilder', '~> 1.2'
 gem 'kaminari', '~> 0.15.0'
 gem 'pg', '0.17.1'
+gem 'puma', '~> 2.7.1'
 gem 'rails', '4.0.2'
 gem 'ruby-vircurex', '~> 0.0.3'
 gem 'sass-rails', '~> 4.0.0'
@@ -40,10 +42,6 @@ end
 group :test do
   gem 'vcr'
   gem 'webmock'
-end
-
-group :production do
-  gem 'unicorn', '~> 4.7.0'
 end
 
 group :doc do

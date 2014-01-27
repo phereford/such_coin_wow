@@ -1,0 +1,507 @@
+---
+DOGE:
+  -
+    cryptsy:
+      BTC: 132
+      LTC: 135
+    bter:
+      BTC: doge_btc
+      CNY: doge_cny
+    vircurex:
+      BTC: doge
+      LTC: doge
+      XPM: doge
+LTC:
+  -
+    cryptsy:
+      BTC: 3
+    bter:
+      BTC: ltc_btc
+      CNY: ltc_cny 
+    vircurex:
+      BTC: ltc
+      XPM: ltc
+ALF:
+  -
+    cryptsy:
+      BTC: 57
+AMC:
+  -
+    cryptsy:
+      BTC: 43
+ANC:
+  -
+    cryptsy:
+      BTC: 66
+      LTC: 121
+    vircurex:
+      BTC: anc
+      LTC: anc
+      XPM: anc
+ARG:
+  -
+    cryptsy:
+      BTC: 48
+BET:
+  -
+    cryptsy:
+      BTC: 129
+BQC:
+  -
+    cryptsy:
+      BTC: 10
+    bter:
+      BTC: bqc_btc
+      CNY: bqc_cny
+      LTC: bqc_ltc
+BTB:
+  -
+    cryptsy:
+      BTC: 23
+    bter:
+      BTC: btb_btc
+      CNY: btb_cny
+      LTC: btb_ltc
+BTE:
+  -
+    cryptsy:
+      BTC: 49
+BTG:
+  -
+    cryptsy:
+      BTC: 50
+BUK:
+  -
+    cryptsy:
+      BTC: 102
+    bter:
+      BTC: buk_btc
+CAP:
+  -
+    cryptsy:
+      BTC: 53
+CAT:
+  -
+    cryptsy:
+      BTC: 136
+CGB:
+  -
+    cryptsy:
+      BTC: 70
+      LTC: 123
+CLR:
+  -
+    cryptsy:
+      BTC: 95
+CMC:
+  -
+    cryptsy:
+      BTC: 74
+    bter:
+      BTC: cmc_btc
+      CNY: cmc_cny
+CNC:
+  -
+    cryptsy:
+      BTC: 8
+      LTC: 17
+    bter:
+      BTC: cnc_btc
+      CNY: cnc_cny 
+      LTC: cnc_ltc
+CRC:
+  -
+    cryptsy:
+      BTC: 58
+CSC:
+  -
+    cryptsy:
+      BTC: 68
+DEM:
+  -
+    cryptsy:
+      BTC: 131
+DGC:
+  -
+    cryptsy:
+      BTC: 26
+      LTC: 96
+    bter:
+      BTC: dgc_btc
+      CNY: dgc_cny
+    vircurex:
+      BTC: dgc
+      LTC: dgc
+      XPM: dgc
+DMD:
+  -
+    cryptsy:
+      BTC: 72
+ELC:
+  -
+    cryptsy:
+      BTC: 12
+EMD:
+  -
+    cryptsy:
+      BTC: 69
+FFC:
+  -
+    cryptsy:
+      BTC: 138
+FBC:
+  -
+    cryptsy:
+      BTC: 39
+FRK:
+  -
+    cryptsy:
+      BTC: 33
+FST:
+  -
+    cryptsy:
+      BTC: 44
+      LTC: 124
+FTC:
+  -
+    cryptsy:
+      BTC: 5
+    bter:
+      BTC: ftc_btc
+      LTC: ftc_ltc
+      CNY: ftc_cny
+    vircurex:
+      BTC: ftc
+      LTC: ftc
+      XPM: ftc
+GDC:
+  -
+    cryptsy:
+      BTC: 82
+GLC:
+  -
+    cryptsy:
+      BTC: 76
+GLD:
+  -
+    cryptsy:
+      BTC: 30
+      LTC: 36
+GLX:
+  -
+    cryptsy:
+      BTC: 78
+HBN:
+  -
+    cryptsy:
+      BTC: 80
+IXC:
+  -
+    cryptsy:
+      BTC: 38
+    vircurex:
+      BTC: ixc
+      LTC: ixc
+      XPM: ixc
+KGC:
+  -
+    cryptsy:
+      BTC: 65
+LK7:
+  -
+    cryptsy:
+      BTC: 116
+LKY:
+  -
+    cryptsy:
+      BTC: 34
+LOT:
+  -
+    cryptsy:
+      BTC: 137
+MEC:
+  -
+    cryptsy:
+      BTC: 45
+      LTC: 100
+    bter:
+      BTC: mec_btc
+      CNY: mec_cny 
+MNC:
+  -
+    cryptsy:
+      BTC: 7
+NBL:
+  -
+    cryptsy:
+      BTC: 32
+NEC:
+  -
+    cryptsy:
+      BTC: 90
+    bter:
+      BTC: nec_btc
+NET:
+  -
+    cryptsy:
+      BTC: 134
+      LTC: 108
+      XPM: 104
+    bter:
+      LTC: net_ltc
+      CNY: net_cny
+NMC:
+  -
+    cryptsy:
+      BTC: 29
+    bter:
+      BTC: nmc_btc
+      CNY: nmc_cny
+      LTC: nmc_ltc
+    vircurex:
+      BTC: nmc
+      LTC: nmc
+      XPM: nmc
+NRB:
+  -
+    cryptsy:
+      BTC: 54
+NVC:
+  -
+    cryptsy:
+      BTC: 13
+    vircurex:
+      BTC: nvc
+      LTC: nvc
+      XPM: nvc
+ORB:
+  -
+    cryptsy:
+      BTC: 75
+PHS:
+  -
+    cryptsy:
+      BTC: 86
+PPC:
+  -
+    cryptsy:
+      BTC: 28
+      LTC: 125
+    bter:
+      BTC: ppc_btc
+      LTC: ppc_ltc
+      CNY: ppc_cny
+    vircurex:
+      BTC: ppc
+      LTC: pcc
+      XPM: ppc
+PTS:
+  -
+    cryptsy:
+      BTC: 119
+    bter:
+      BTC: pts_btc
+      CNY: pts_cny
+PXC:
+  -
+    cryptsy:
+      BTC: 31
+      LTC: 101
+PYC:
+  -
+    cryptsy:
+      BTC: 92
+QRK:
+  -
+    cryptsy:
+      BTC: 71
+      LTC: 126
+    bter:
+      BTC: qrk_btc
+      CNY: qrk_cny
+    vircurex:
+      BTC: qrk
+      LTC: qrk
+      XPM: qrk
+SBC:
+  -
+    cryptsy:
+      BTC: 51
+      LTC: 128
+SPT:
+  -
+    cryptsy:
+      BTC: 81
+SRC:
+  -
+    cryptsy:
+      BTC: 88
+    bter:
+      BTC: src_btc
+      CNY: src_cny 
+TAG:
+  -
+    cryptsy:
+      BTC: 117
+    bter:
+      BTC: tag_btc
+      CNY: tag_cny
+TEK:
+  -
+    cryptsy:
+      BTC: 114
+TGC:
+  -
+    cryptsy:
+      BTC: 130
+TRC:
+  -
+    cryptsy:
+      BTC: 27
+    bter:
+      LTC: trc_ltc
+    vircurex:
+      BTC: trc
+      LTC: trc
+      XPM: trc
+UNO:
+  -
+    cryptsy:
+      BTC: 133
+WDC:
+  -
+    cryptsy:
+      BTC: 14
+      LTC: 21
+    vircurex:
+      BTC: wdc
+      LTC: wdc
+      XPM: wdc
+XJO:
+  -
+    cryptsy:
+      BTC: 115
+XPM:
+  -
+    cryptsy:
+      BTC: 63
+      LTC: 106
+    bter:
+      BTC: xpm_btc
+      CNY: xpm_cny
+    vircurex:
+      BTC: xpm
+      LTC: xpm
+YBC:
+  -
+    cryptsy:
+      BTC: 73
+ZET:
+  -
+    cryptsy:
+      BTC: 85
+      LTC: 127
+    bter:
+      BTC: zet_btc
+      CNY: zet_cny
+ADT:
+  -
+    cryptsy:
+      LTC: 94
+      XPM: 113
+ASC:
+  -
+    cryptsy:
+      LTC: 111
+      XPM: 112
+CENT:
+  -
+    cryptsy:
+      LTC: 97
+      XPM: 118
+    bter:
+      LTC: cent_ltc
+      CNY: cent_cny
+CPR:
+  -
+    cryptsy:
+      LTC: 91
+DBL:
+  -
+    cryptsy:
+      LTC: 46
+DVC:
+  -
+    cryptsy:
+      LTC: 52
+      XPM: 122
+    bter:
+      LTC: dvc_ltc
+      CNY: dvc_cny
+    vircurex:
+      BTC: dvc
+      LTC: dvc
+      XPM: dvc
+ELP:
+  -
+    cryptsy:
+      LTC: 93
+EZC:
+  -
+    cryptsy:
+      LTC: 55
+FLO:
+  -
+    cryptsy:
+      LTC: 61
+GME:
+  -
+    cryptsy:
+      LTC: 84
+IFC:
+  -
+    cryptsy:
+      LTC: 60
+      XPM: 105
+    bter:
+      LTC: ifc_ltc
+      CNY: ifc_cny
+JKC:
+  -
+    cryptsy:
+      LTC: 35
+MEM:
+  -
+    cryptsy:
+      LTC: 56
+MST:
+  -
+    cryptsy:
+      LTC: 62
+RED:
+  -
+    cryptsy:
+      LTC: 87
+    bter:
+      LTC: red_ltc
+      CNY: red_cny
+RYC:
+  -
+    cryptsy:
+      LTC: 37
+SXC:
+  -
+    cryptsy:
+      LTC: 98
+TIX:
+  -
+    cryptsy:
+      LTC: 107
+      XPM: 103
+    bter:
+      LTC: tix_ltc
+      CNY: tix_cny
+XNC:
+  -
+    cryptsy:
+      LTC: 67

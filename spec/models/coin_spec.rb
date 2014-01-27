@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe Coin, 'relationships' do
   it { should have_many(:transactions) }
+  it { should have_many(:exchange_rates) }
   it { should belong_to(:user) }
 end
 

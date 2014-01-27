@@ -1,0 +1,22 @@
+.transactions-table, .exchanges-table {
+  @extend .table;
+  @extend .table-striped;
+  @extend .table-bordered;
+
+  @include make-lg-column(3);
+  @include make-md-column(3);
+  @include make-sm-column(6);
+  @include make-xs-column(6);
+}
+
+.transasctions-table {
+  @extend .pull-right;
+}
+
+tr.send {
+  @extend .danger;
+}
+
+tr.receive {
+  @extend .success;
+}

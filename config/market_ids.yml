@@ -1,0 +1,10 @@
+---
+-
+  DOGE:
+    -
+      cryptsy:
+        BTC: 132
+        LTC: 135
+      bter:
+        BTC: doge_btc
+        CNY: doge_cny
