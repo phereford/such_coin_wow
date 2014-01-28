@@ -8,6 +8,7 @@
   {{#if isEditing}}
     testt
   {{else}}
+  <div class="table-container">
     <table class="exchanges-table">
       <thead>
         <th>Exchange</th>
@@ -26,6 +27,8 @@
       {{/each}}
       </tbody>
     </table>
+  </div>
+  <div class="table-container">
     <table class="transactions-table">
       <thead>
         <th>Account</th>
@@ -42,5 +45,6 @@
         {{/each}}
       </tbody>
     </table>
+  </div>
   {{/if}}
 </section>

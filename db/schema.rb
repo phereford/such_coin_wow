@@ -50,11 +50,13 @@ ActiveRecord::Schema.define(version: 20140119174016) do
 
   create_table "exchange_rates", force: true do |t|
     t.integer  "coin_id"
-    t.string   "market"
+    t.string   "exchange"
     t.string   "market_id"
-    t.string   "market_type"
-    t.datetime "occurred_at"
+    t.string   "market"
     t.float    "rate"
+    t.datetime "occurred_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "exchange_rates", ["coin_id"], name: "index_exchange_rates_on_coin_id", using: :btree

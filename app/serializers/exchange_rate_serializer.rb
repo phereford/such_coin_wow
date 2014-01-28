@@ -1,7 +1,7 @@
 class ExchangeRateSerializer < ActiveModel::Serializer
-  attributes :id, :market, :market_type, :occurred_at, :rate
+  attributes :id, :market, :exchange, :occurred_at, :rate
 
   def market
-    object.market.capitalize
+    object.exchange.capitalize
   end
 end

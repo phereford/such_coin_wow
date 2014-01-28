@@ -2,8 +2,9 @@ require 'spec_helper'
 
 describe CoinsController do
   before(:each) do
-    sign_in
-    @coin = create(:coin)
+    user = create(:user)
+    sign_in(user)
+    @coin = create(:coin, user: user)
   end
 
   describe 'GET index' do
@@ -12,11 +13,6 @@ describe CoinsController do
 
       expect(assigns(:coins)).to include @coin
     end
-
-    it 'renders index template' do
-      get :index
-      expect(:response).to render_template('index')
-    end
   end
 
   describe 'GET show' do
@@ -24,12 +20,6 @@ describe CoinsController do
       get :show, { id: @coin.id }
 
       expect(assigns(:coin)).to eql @coin
-    end
-
-    it 'render show template' do
-      get :show, { id: @coin.id }
-
-      expect(:response).to render_template('show')
     end
   end
 
@@ -123,12 +113,6 @@ describe CoinsController do
       expect(assigns(:coin)).to eql @coin
     end
 
-    it 'redirects back' do
-      get :sync, id: @coin.id
-
-      expect(:response).to redirect_to(coins_path)
-    end
-
     context 'successfully schedules a sync job' do
       it 'schedules a SyncTransaction delayed job' do
         expect{
@@ -139,7 +123,7 @@ describe CoinsController do
       it 'sets the success message' do
         get :sync, id: @coin.id
 
-        expect(flash[:success]).to eql "#{@coin.ticker} sync processing."
+        (response.body).should eql "Sync for #{@coin.ticker} successfully queued.".to_json
       end
     end
   end

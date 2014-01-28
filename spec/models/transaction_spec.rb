@@ -20,7 +20,7 @@ describe Transaction, '#update_user_total' do
   it 'updates the user total when a new transaction is created' do
     user = create(:user)
     coin = create(:coin, user: user, mined: true)
-    create(:transaction, coin: coin, amount: 100.555)
+    create(:transaction, coin: coin, amount: 100.555, category: 'receive')
 
     expect(user.total_coins[coin.ticker]).to eql 100.555
   end

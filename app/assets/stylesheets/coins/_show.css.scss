@@ -2,11 +2,6 @@
   @extend .table;
   @extend .table-striped;
   @extend .table-bordered;
-
-  @include make-lg-column(3);
-  @include make-md-column(3);
-  @include make-sm-column(6);
-  @include make-xs-column(6);
 }
 
 .transasctions-table {
@@ -19,4 +14,15 @@ tr.send {
 
 tr.receive {
   @extend .success;
+}
+
+.table-container {
+  display: inline-block;
+  height: 250px;
+  overflow-y: scroll;
+
+  @include make-lg-column(3);
+  @include make-md-column(3);
+  @include make-sm-column(6);
+  @include make-xs-column(6);
 }

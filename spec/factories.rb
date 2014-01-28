@@ -14,7 +14,6 @@ FactoryGirl.define do
     user
     name
     ticker
-    cryptsy_market_ids { { 'BTC' => 132 } }
 
     trait :invalid do
       name nil
@@ -32,9 +31,9 @@ FactoryGirl.define do
 
   factory :exchange_rate do
     coin
-    market 'cryptsy'
+    exchange 'cryptsy'
     market_id '132'
-    market_type 'BTC'
+    market 'BTC'
     occurred_at { Time.now }
     rate 1.09
   end
