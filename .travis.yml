@@ -1,0 +1,20 @@
+language: ruby
+
+bundler_args: --without development
+
+rvm:
+  - 2.1.0
+
+env:
+  global:
+    - RAILS_ENV=test BUNDLE_WITHOUT=development
+
+before_install:
+  - gem install bundler
+
+script:
+  - bundle exec rake
+
+branches:
+  only:
+    - master
