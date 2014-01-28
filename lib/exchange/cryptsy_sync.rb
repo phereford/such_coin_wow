@@ -13,9 +13,9 @@ module Exchange
       data = Cryptsy::API::Client.new.marketdata(id)['return']['markets'][@coin.ticker]
 
       @coin.exchange_rates.new(
-        market: 'cryptsy',
+        exchange: 'cryptsy',
         market_id: id,
-        market_type: market,
+        market: market,
         occurred_at: data['lasttradetime'],
         rate: data['lasttradeprice']
       )

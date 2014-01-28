@@ -1,0 +1,129 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bter.com/api/1/ticker/doge_cny
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Tue, 28 Jan 2014 13:43:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=ddbcca994843e6eef0293a571cee819411390916599494; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.bter.com; HttpOnly
+      X-Powered-By:
+      - CF ()
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, must-revalidate
+      Cf-Ray:
+      - f3e1c6ada2601ef
+    body:
+      encoding: UTF-8
+      string: |2-
+
+        {"result":"true","last":0.008111,"high":0.0093,"low":0.00752,"avg":0.008373,"sell":0.008139,"buy":0.008112,"vol_doge":725054080.344,"vol_cny":6070900.162632}
+    http_version: 
+  recorded_at: Tue, 28 Jan 2014 13:43:21 GMT
+- request:
+    method: get
+    uri: https://bter.com/api/1/ticker/doge_ltc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Tue, 28 Jan 2014 13:43:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d83acd2ee01ddac0ed2c8e941dbc1d1161390916599916; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.bter.com; HttpOnly
+      X-Powered-By:
+      - CF ()
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, must-revalidate
+      Cf-Ray:
+      - f3e1c6d7a3101ef
+    body:
+      encoding: UTF-8
+      string: |2-
+
+        {"result":"false","message":"Error: invalid currency pair"}
+    http_version: 
+  recorded_at: Tue, 28 Jan 2014 13:43:21 GMT
+- request:
+    method: get
+    uri: https://bter.com/api/1/ticker/doge_btc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Tue, 28 Jan 2014 13:43:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc0f1d6a2080b0f8c440cc3ccf233e3451390916600305; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.bter.com; HttpOnly
+      X-Powered-By:
+      - CF ()
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, must-revalidate
+      Cf-Ray:
+      - f3e1c6fea3f01ef
+    body:
+      encoding: UTF-8
+      string: |2-
+
+        {"result":"true","last":"0.00000168","high":"0.00000190","low":"0.00000153","avg":"0.00000177","sell":"0.00000168","buy":"0.00000167","vol_doge":248067910.9,"vol_btc":439.19167549}
+    http_version: 
+  recorded_at: Tue, 28 Jan 2014 13:43:22 GMT
+recorded_with: VCR 2.8.0

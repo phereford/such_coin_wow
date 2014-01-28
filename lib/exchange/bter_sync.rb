@@ -15,9 +15,9 @@ module Exchange
       data = Bter::Public.new.ticker(id)
 
       @coin.exchange_rates.new(
-        market: 'bter',
+        exchange: 'bter',
         market_id: id,
-        market_type: market,
+        market: market,
         occurred_at: Time.now,
         rate: data[:last]
       )
