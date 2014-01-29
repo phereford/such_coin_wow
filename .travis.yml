@@ -5,6 +5,13 @@ bundler_args: --without development
 rvm:
   - 2.1.0
 
+before_script:
+  - RAILS_ENV=test bundle exec rake db:create
+  - bundle exec rake db:migrate
+
+script:
+  - bundle exec rake
+
 env:
   global:
     - RAILS_ENV=test BUNDLE_WITHOUT=development

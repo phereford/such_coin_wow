@@ -8,9 +8,11 @@ require 'factory_girl_rails'
 require 'capybara/poltergeist'
 require 'vcr'
 require 'webmock/rspec'
+require 'coveralls'
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each {|f| require f}
 
+Coveralls.wear! 'rails'
 SimpleCov.start 'rails'
 Capybara.javascript_driver = :poltergeist
 DatabaseCleaner.strategy = :truncation

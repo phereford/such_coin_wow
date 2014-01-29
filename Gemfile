@@ -7,6 +7,7 @@ gem 'bootstrap-kaminari-views'
 gem 'bower-rails', '~> 0.6.1'
 gem 'bter-ruby', '~> 0.0.2', github: 'phereford/bter-ruby', branch: 'ph-minor-dependency-fix'
 gem 'coffee-rails', '~> 4.0.1'
+gem 'coveralls', '~> 0.7.0', require: false
 gem 'cryptsy-api', '~> 0.0.3'
 gem 'delayed_job', '~> 4.0.0'
 gem 'delayed_job_active_record', '~> 4.0.0'
