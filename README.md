@@ -1,6 +1,7 @@
 # Such Coin - Wow #
 [![Build Status](https://travis-ci.org/phereford/such_coin_wow.png?branch=master)](https://travis-ci.org/phereford/such_coin_wow)
 [![Coverage Status](https://coveralls.io/repos/phereford/such_coin_wow/badge.png)](https://coveralls.io/r/phereford/such_coin_wow)
+[![Code Climate](https://codeclimate.com/github/phereford/such_coin_wow.png)](https://codeclimate.com/github/phereford/such_coin_wow)
 ## Summary ##
 This project is a web application that allows Cryptocurrency miners track their
 profitability. Since most online wallets get hacked rather frequently, this app
